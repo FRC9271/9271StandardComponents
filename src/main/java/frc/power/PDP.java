@@ -1,5 +1,5 @@
 package frc.power;
-import edu.wpi.first.wpilibj.PowerDistributionPanel;
+import edu.wpi.first.wpilibj.PowerDistribution;
 import frc.util.Logger;
 import edu.wpi.first.wpilibj.Timer;
 import frc.robot.RobotMap;

@@ -6,4 +6,5 @@ public class RobotToggles{
 
     //public static final boolean [NAME] = [STATE];
     //public static final boolean happiness = false; <-- EXAMPLE
+    public static final boolean logData = false;
 }

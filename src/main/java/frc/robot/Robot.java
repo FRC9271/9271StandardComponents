@@ -7,8 +7,6 @@
 
 package frc.robot;
 
-import com.revrobotics.Rev2mDistanceSensor.RangeProfile;
-
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
