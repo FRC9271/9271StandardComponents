@@ -30,7 +30,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void robotInit() {
-    
+    driver.init();
   }
 
   /**
@@ -43,6 +43,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void robotPeriodic() {
+    
   }
 
   @Override

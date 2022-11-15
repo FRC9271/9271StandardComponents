@@ -3,25 +3,24 @@ package frc.drive;
 import frc.robot.Robot;
 import frc.robot.RobotMap;
 import frc.robot.RobotNumbers;
+import frc.robot.RobotToggles;
 
 import frc.controllers.XBoxController;
 
 import java.io.IOException;
 
 import frc.util.Logger;
-//import frc.util.Permalogger;
 
 import java.lang.Math;
 
 public class Driver{
     private Logger logger = new Logger("drive");
     private Logger posLogger = new Logger("positions");
-    
+
     private XBoxController controller;
 
     public Driver(){
         
-        //headControl = new PIDController(Kp, Ki, Kd);
     }
 
     /**
@@ -38,7 +37,7 @@ public class Driver{
         //do whatever else you want to do on robot boot (set pid, etc)
     }
 
-    public void setCurrentLimits(double limit){
+    public void setCurrentLimits(int limit){
         //set current limits of all motors, can be useful
     }
 
@@ -55,16 +54,15 @@ public class Driver{
     public void updateTeleop(){
         updateGeneric();
         //do all your teleop drive stuff
-        double turn = -controller.getStickRX();
-        double forward;
-        forward = controller.getStickLY();
-        drive(forward, turn);
     }
 
+    /**
+     * Update the Driver object(for test mode).
+     */
     public void updateTest(){
         updateGeneric();
         //do whatever you want to do in test mode
-        //stuf like log position on a button presse(useful for getting auton location points)
+        //stuff like log position on a button presse(useful for getting auton location points)
     }
 
     
